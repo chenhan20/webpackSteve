@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import './style.css';
 
   function component() {
     let element = document.createElement('div');
@@ -12,11 +13,9 @@ import _ from 'lodash';
     let element = document.createElement('div');
 
     element.innerHTML = _.join(['QQQQQ', 'SSSSSS'], ' ');
-
+    element.classList.add('hello');
     return element;
   }
 
-  
-  alert(123123123);
   document.body.appendChild(component());
   document.body.appendChild(component1());
